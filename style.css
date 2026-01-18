@@ -1,3 +1,120 @@
-body{
-    background-color: gray;
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter;
 }
+
+/* navbar design*/
+nav {
+  padding: 2px;
+  display: flex;
+  max-width: 1600px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+
+body {
+  background-color: rgba(26, 11, 46, 1);
+  color: white;
+}
+
+
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+
+}
+
+.logo-circle {
+  font-size: 40px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.tagline {
+  font-size: 18px;
+  margin: 10px 0 30px;
+  color: #ccc;
+}
+
+.cta-buttons .btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.spotify {
+  background: #1db954;
+  color: #fff;
+}
+
+.subscribe {
+  background: transparent;
+  color: #1db954;
+  border-color: #1db954;
+  margin: 10px;
+  padding: 12px 24px;
+  border-radius: 30px;
+}
+
+.about {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.stat {
+  font-size: 24px;
+  margin: 10px;
+  text-align: center;
+}
+
+.stat span {
+  display: block;
+  font-size: 14px;
+  color: #aaa;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
