@@ -6,14 +6,47 @@
   box-sizing: border-box;
   font-family: Inter;
 }
+/* top-navbar-design */
+.logo-text{
+justify-self: self-start;
+  font-size: 48px;
+  font-weight: bold;
+  font-family: 'inter', sans-serif;
+}
 
-/* navbar design*/
-nav {
-  padding: 2px;
+.tech {
+  color: white;
+}
+
+.logo-text.wave {
+background-image: linear-gradient(45deg, #f7e93f, #fb09b4, #9100f8);
+
+
+
+
+}
+
+
+body {
+  color: white;
+}
+
+.subs-btn {
+  justify-content: end;
+  background-image: linear-gradient(45deg, #f7e93f, #fb09b4, #9100f8) ;
+  border: 2px solid gray;  
+  border-radius: 46px;
+  padding: 10px;
+  font-size: 26px;
+  color: white;
+  font-weight: bold;
+}
+
+nav > div {
   display: flex;
-  max-width: 1600px;
-  margin: 0 auto;
   justify-content: space-between;
+  gap: 27px;
+  align-items: center;
 }
 
 
@@ -26,16 +59,59 @@ body {
 
 .hero {
   text-align: center;
-  padding: 60px 20px;
+}
 
+.hero {
+  position: relative;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .logo-circle {
-  font-size: 40px;
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.logo-circle>hero-background-img {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.hero-circle-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.microphone {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+.logo-circle {
+  font-size: 60px;
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  margin: 0 auto 20px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,35 +120,48 @@ body {
 h1 {
   font-size: 48px;
   margin: 0;
+  align-content: center;
+  justify-self: center;
+  
+
 }
 
-.tagline {
+.about>p {
   font-size: 18px;
   margin: 10px 0 30px;
   color: #ccc;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
-.cta-buttons .btn {
+.cta-buttons{
+  align-self: center;
+  justify-content: center;
+  display: flex;
+}
+.cta-buttons .subs-btn-1 {
   display: inline-block;
   margin: 10px;
-  padding: 12px 24px;
-  border-radius: 30px;
+  padding: 20px 20px;
+  border-radius: 40px;
   text-decoration: none;
   font-weight: bold;
+  background-image: linear-gradient(45deg, #f7e93f, #fb09b4, #9100f8) ;
 }
 
-.spotify {
-  background: #1db954;
-  color: #fff;
-}
 
-.subscribe {
-  background: transparent;
-  color: #1db954;
-  border-color: #1db954;
+.cta-buttons .subs-btn-2 {
+  display: inline-block;
   margin: 10px;
-  padding: 12px 24px;
-  border-radius: 30px;
+  padding: 20px 20px;
+  border-radius: 40px;
+  font-weight: bold;
+background-color: transparent;
+  border: 2px solid white;
+  text-decoration: none;
+  color: white;
+  
 }
 
 .about {
